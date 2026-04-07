@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FriendmindR — Ajouter un contact</title>
+  <style>
+    body { font-family: sans-serif; background: #f4f2ff; display: flex;
+           align-items: center; justify-content: center; min-height: 100vh; margin: 0; }
+    .card { background: white; border-radius: 20px; padding: 32px 24px;
+            max-width: 360px; text-align: center; box-shadow: 0 8px 40px #1e414820; }
+    .logo { font-size: 48px; margin-bottom: 12px; }
+    h1 { color: #1e4148; font-size: 22px; margin: 0 0 8px; }
+    p { color: #3c6e78; font-size: 14px; margin: 0 0 24px; }
+    .btn { display: block; background: #4b8593; color: white; padding: 14px;
+           border-radius: 12px; text-decoration: none; font-weight: 600;
+           font-size: 15px; margin-bottom: 10px; }
+    .btn.secondary { background: #f4f2ff; color: #4b8593; }
+  </style>
+  <script>
+    // Tente d'ouvrir l'app via deep link
+    window.onload = function() {
+      const params = window.location.search;
+      window.location = 'friendmindr://add' + params;
+      // Si l'app n'est pas installée, reste sur cette page
+    };
+  </script>
+</head>
+<body>
+  <div class="card">
+    <div class="logo">🧠</div>
+    <h1>FriendmindR</h1>
+    <p>Quelqu'un veut partager un contact avec vous.</p>
+    <a href="https://play.google.com/store/apps/details?id=io.github.myad31000.friendmindr"
+       class="btn">📲 Télécharger FriendmindR</a>
+    <a href="friendmindr://add" class="btn secondary">Ouvrir l'app</a>
+  </div>
+</body>
+</html>
