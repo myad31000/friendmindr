@@ -1,10 +1,12 @@
-[{
-  "relation": ["delegate_permission/common.handle_all_urls"],
-  "target": {
-    "namespace": "android_app",
-    "package_name": "io.github.myad31000.friendmindr",
-    "sha256_cert_fingerprints": [
-      "48:19:B9:55:C5:2B:DF:B2:6A:7E:88:B6:B9:2C:46:5D:0F:5B:B9:05:BD:BE:92:81:83:CC:50:01:11:97:36:E3"
-    ]
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "io.github.myad31000.friendmindr",
+      "sha256_cert_fingerprints": [
+        "98:D4:67:BB:05:09:F6:F8:7C:36:A7:A0:D1:87:54:46:38:4E:E9:89:F4:45:51:BD:3D:DE:13:D9:BF:7F:63:79"
+      ]
+    }
   }
-}]
+]
